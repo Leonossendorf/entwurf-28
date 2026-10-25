@@ -124,6 +124,19 @@
       zeigeWeiche(form);
     })(weiche[w]);
   }
+  /* Das Formular erkennt den Einstieg: service.html#rezept wählt „Folgerezept“ vor, karriere.html#mfa die Stelle */
+  function vorauswahl() {
+    var h = (location.hash || "").replace("#", "");
+    if (!h) return;
+    var r = document.querySelector('input[name=anliegen][value="' + h + '"], input[name=stelle][value="' + h + '"]');
+    if (!r) return;
+    r.checked = true;
+    if (r.form && r.form.hasAttribute("data-weiche")) zeigeWeiche(r.form);
+    var ziel = document.getElementById(h);
+    if (ziel) ziel.scrollIntoView({ block: "start" });
+  }
+  vorauswahl();
+  window.addEventListener("hashchange", vorauswahl);
   var forms = document.querySelectorAll("form[data-demo]");
   for (var f = 0; f < forms.length; f++) {
     (function (form) {
