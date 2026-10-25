@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Termin, Rezept, Überweisung – Praxis Knüvener (Entwurf)</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header>
+<div class="entwurf"><div class="wrap"><strong>Entwurf.</strong> <span>Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt der Praxis Knüvener. Formulare versenden nichts.</span></div></div>
+<div class="topbar"><div class="wrap">
+  <span class="kassen">Alle Kassen und privat Versicherte · Gronau-Epe</span>
+  <div class="right">
+    <a href="tel:+4925653333"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>02565 3333</a>
+    <a class="notfall" href="notfall.html">Notfall</a>
+  </div>
+</div></div>
+<div class="site-header"><div class="wrap">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 3v34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M27 9c-4-4-12-3-12 3s10 5 10 11-9 7-12 2M13 29c3 5 13 4 13-1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+    <span><span class="name">Praxis Knüvener</span><span class="sub">Hausärztlich-internistische Praxis · Gronau-Epe</span></span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+  <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü"><ul>
+    <li><a href="index.html#sprechzeiten">Sprechzeiten</a></li>
+    <li><a href="service.html" aria-current="page">Termin &amp; Rezept</a></li>
+    <li><a href="index.html#leistungen">Leistungen</a></li>
+    <li><a href="index.html#team">Team</a></li>
+    <li><a href="index.html#aktuelles">Aktuelles</a></li>
+    <li><a href="karriere.html">Weiterbildung &amp; Karriere</a></li>
+    <li><a href="index.html#kontakt">Kontakt</a></li>
+  </ul></nav>
+  <div class="tools">
+    <button type="button" id="btn-font" aria-pressed="false"><span class="big" aria-hidden="true">A</span> Schrift größer</button>
+    <button type="button" id="btn-contrast" aria-pressed="false">Kontrast</button>
+    <a href="leichte-sprache.html">Leichte Sprache</a>
+  </div>
+</div></div></header>
+
+<main id="inhalt">
+<div class="page-head"><div class="wrap">
+  <p class="eyebrow">Anfrage an die Anmeldung</p>
+  <h1>Termin, Rezept, Überweisung</h1>
+  <p>Sie geben Ihr Anliegen und Ihre Kontaktdaten ein. Die Anmeldung prüft die Anfrage während der Sprechzeiten und meldet sich bei Ihnen. Das ersetzt keinen Anruf im Notfall.</p>
+</div></div>
+<div class="page-body"><div class="wrap">
+  <div class="form-wrap">
+    <div class="alert-box"><p><strong>Akute Beschwerden oder Notfälle?</strong> Bitte rufen Sie an: Praxis <a href="tel:+4925653333">02565 3333</a>, außerhalb der Sprechzeiten <a href="tel:116117">116117</a>, bei Lebensgefahr <a href="tel:112">112</a>. Bitte tragen Sie in dieses Formular keine Beschwerden, Diagnosen oder Befunde ein.</p></div>
+    <div class="demo-note"><p><strong>Entwurf:</strong> Dieses Formular versendet nichts. In der fertigen Website würde die Anfrage verschlüsselt an die Praxis gehen und dort in der Anmeldung erscheinen.</p></div>
+
+    <form data-demo="danke" data-weiche novalidate>
+      <fieldset>
+        <legend>Worum geht es?</legend>
+        <div class="chips">
+          <label class="chip" id="termin"><input type="radio" name="anliegen" value="termin" checked><span>Termin</span></label>
+          <label class="chip" id="rezept"><input type="radio" name="anliegen" value="rezept"><span>Folgerezept</span></label>
+          <label class="chip" id="ueberweisung"><input type="radio" name="anliegen" value="ueberweisung"><span>Überweisung</span></label>
+          <label class="chip" id="impfung"><input type="radio" name="anliegen" value="impfung"><span>Impftermin</span></label>
+          <label class="chip" id="bescheinigung"><input type="radio" name="anliegen" value="bescheinigung"><span>Bescheinigung</span></label>
+          <label class="chip" id="frage"><input type="radio" name="anliegen" value="frage"><span>Frage an die Anmeldung</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="termin">
+        <legend>Termin</legend>
+        <div class="field"><span class="lbl">Wann passt es Ihnen? <span class="opt">(Mehrfachauswahl)</span></span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="zeit" value="vormittag"><span>Vormittags (Mo–Fr)</span></label>
+            <label class="chip"><input type="checkbox" name="zeit" value="nachmittag"><span>Mo oder Di nachmittags</span></label>
+            <label class="chip"><input type="checkbox" name="zeit" value="abend"><span>Do abends</span></label>
+            <label class="chip"><input type="checkbox" name="zeit" value="egal"><span>Egal, so früh wie möglich</span></label>
+          </div>
+        </div>
+        <div class="field"><span class="lbl">Sie sind</span>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="patient" value="bestand" checked><span>bereits Patientin oder Patient</span></label>
+            <label class="chip"><input type="radio" name="patient" value="neu"><span>neu in der Praxis</span></label>
+          </div>
+          <p class="hint">Neue Patientinnen und Patienten: Die Anmeldung sagt Ihnen, ob und wann eine Aufnahme möglich ist.</p>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="rezept">
+        <legend>Folgerezept</legend>
+        <div class="field">
+          <label class="check"><input type="checkbox" name="dauer" value="ja" checked> <span>Dauermedikation wie zuletzt verordnet</span></label>
+        </div>
+        <div class="field"><label for="medikament">Einzelnes Medikament <span class="opt">(optional, nur wenn nicht die gesamte Dauermedikation gemeint ist)</span></label><input type="text" id="medikament" name="medikament" autocomplete="off"><p class="hint">Nur der Name wie auf der Packung. Keine weiteren Angaben, keine Beschwerden.</p></div>
+        <div class="field"><span class="lbl">Abholung</span>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="abholung" value="erezept" checked><span>eRezept auf der Versichertenkarte</span></label>
+            <label class="chip"><input type="radio" name="abholung" value="praxis"><span>Ausdruck in der Praxis</span></label>
+          </div>
+          <p class="hint">eRezepte sind nachmittags ab 16 Uhr oder am Folgetag ab 10 Uhr in Ihrer Apotheke abholbar.</p>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="ueberweisung">
+        <legend>Überweisung</legend>
+        <div class="field"><label for="fach">Fachrichtung</label>
+          <select id="fach" name="fach" data-required>
+            <option value="">Bitte wählen</option>
+            <option>Augenheilkunde</option><option>Hals-Nasen-Ohren</option><option>Orthopädie</option><option>Kardiologie</option><option>Gastroenterologie</option><option>Dermatologie</option><option>Gynäkologie</option><option>Urologie</option><option>Neurologie</option><option>Radiologie</option><option>Physiotherapie</option><option>Andere Fachrichtung</option>
+          </select>
+          <p class="hint">Überweisungen stellt die Praxis aus, wenn die Behandlung bereits besprochen wurde. Sonst bitte zuerst einen Termin.</p>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="impfung">
+        <legend>Impftermin</legend>
+        <div class="field"><label for="impf">Impfung</label>
+          <select id="impf" name="impf" data-required>
+            <option value="">Bitte wählen</option>
+            <option>Grippe (Influenza)</option><option>COVID</option><option>Grippe und COVID am selben Tag</option><option>Impfpass prüfen, Auffrischungen</option><option>Reisemedizinische Beratung</option>
+          </select>
+          <p class="hint">Grippe- und COVID-Impfungen dienstags und mittwochs nach Terminabsprache. Bitte Impfpass mitbringen. Reiseimpfungen möglichst 6 Wochen vor Abreise.</p>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="bescheinigung">
+        <legend>Bescheinigung</legend>
+        <div class="field"><label for="art">Art der Bescheinigung</label>
+          <select id="art" name="art" data-required>
+            <option value="">Bitte wählen</option>
+            <option>Führerscheinuntersuchung (C-, D-Klassen)</option><option>Jugendschutzuntersuchung</option><option>Untersuchung für eine Versicherung</option><option>Schulbescheinigung</option><option>Krankentagegeldbescheinigung</option><option>Andere</option>
+          </select>
+          <p class="hint">Bitte bringen Sie die Formulare des Amtes oder der Versicherung zum Termin mit.</p>
+        </div>
+      </fieldset>
+
+      <fieldset data-panel="frage">
+        <legend>Ihre Nachricht an die Anmeldung</legend>
+        <div class="field"><label for="nachricht">Nachricht</label><textarea id="nachricht" name="nachricht" data-required></textarea><p class="hint">Organisatorisches, Unterlagen, Rückruf. Bitte keine medizinischen Angaben, keine Beschwerden, keine Befunde.</p></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ihre Daten</legend>
+        <div class="two">
+          <div class="field"><label for="name">Name <span class="opt">(wie auf der Versichertenkarte)</span></label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="geb">Geburtsdatum <span class="opt">(optional, hilft der Anmeldung)</span></label><input type="date" id="geb" name="geb" autocomplete="bday"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="tel">Telefon</label><input type="tel" id="tel" name="tel" autocomplete="tel"></div>
+          <div class="field"><label for="mail">E-Mail</label><input type="email" id="mail" name="mail" autocomplete="email"></div>
+        </div>
+        <p class="hint">Telefon oder E-Mail genügt. Die Anmeldung meldet sich auf dem Weg, den Sie angeben.</p>
+        <div class="field" style="margin-top:1rem"><label class="check"><input type="checkbox" name="ds" value="ja" required> <span>Ich habe den <a href="datenschutz.html">Hinweis zum Datenschutz</a> gelesen. Meine Angaben werden nur zur Bearbeitung dieser Anfrage verwendet.</span></label></div>
+        <p class="error" aria-live="assertive"></p>
+      </fieldset>
+      <div class="btn-row"><button class="btn" type="submit">Anfrage senden</button><a class="btn secondary" href="tel:+4925653333">Lieber anrufen: 02565 3333</a></div>
+    </form>
+
+    <div class="success" id="danke" hidden>
+      <h2>Vielen Dank, Ihre Anfrage ist angekommen.</h2>
+      <p>So würde es in der fertigen Website weitergehen: Die Anmeldung sieht Ihre Anfrage während der Sprechzeiten und meldet sich telefonisch oder per E-Mail. Rezepte liegen nach Freigabe als eRezept in der Apotheke bereit. In diesem Entwurf wurde nichts versendet.</p>
+      <p><a href="index.html">Zurück zur Startseite</a></p>
+    </div>
+  </div>
+</div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="cols">
+    <div><h2>Praxis Knüvener</h2><p>Michael Knüvener · Facharzt für Innere Medizin<br>Hausärztliche Versorgung<br>Antoniusstraße 1, 48599 Gronau-Epe<br>Telefon <a href="tel:+4925653333">02565 3333</a> · Fax 02565 1029<br><a href="mailto:praxis@knuevener.com">praxis@knuevener.com</a></p></div>
+    <div><h2>Sprechzeiten</h2><ul><li>Mo–Fr 9–12 Uhr</li><li>Mo und Di 16–18 Uhr</li><li>Do 17–19 Uhr</li><li>Termine nach telefonischer Absprache</li><li>Notfall: <a href="tel:116117">116117</a> · <a href="tel:112">112</a></li></ul></div>
+    <div><h2>Seiten</h2><ul><li><a href="notfall.html">Notfall und Bereitschaftsdienst</a></li><li><a href="service.html">Termin, Rezept, Überweisung</a></li><li><a href="karriere.html">Weiterbildung und Karriere</a></li><li><a href="leichte-sprache.html">Leichte Sprache</a></li><li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+  </div>
+  <p class="entwurf-hinweis">Unverbindlicher Entwurf von Leon Oßendorf, Webdesign aus Ochtrup, kein offizieller Auftritt der Praxis Knüvener. Angaben nach den Informationen der Praxis auf knuevener.com, Stand Oktober 2026. Formulare versenden nichts.</p>
+</div></footer>
+<nav class="mobile-bar" aria-label="Schnellzugriff">
+  <a href="tel:+4925653333"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Anrufen</a>
+  <a class="main" href="service.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Termin &amp; Rezept</a>
+  <a class="rot" href="notfall.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l10 18H2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4M12 17v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Notfall</a>
+</nav>
+<script src="js/main.js"></script>
+</body>
+</html>
