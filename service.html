@@ -48,12 +48,12 @@
 <div class="page-head"><div class="wrap">
   <p class="eyebrow">Anfrage an die Anmeldung</p>
   <h1>Termin, Rezept, Überweisung</h1>
-  <p>Sie geben Ihr Anliegen und Ihre Kontaktdaten ein. Die Anmeldung prüft die Anfrage während der Sprechzeiten und meldet sich bei Ihnen. Das ersetzt keinen Anruf im Notfall.</p>
+  <p>Anliegen wählen, Kontakt angeben. Die Anmeldung meldet sich bei Ihnen.</p>
 </div></div>
 <div class="page-body"><div class="wrap">
   <div class="form-wrap">
-    <div class="alert-box"><p><strong>Akute Beschwerden oder Notfälle?</strong> Bitte rufen Sie an: Praxis <a href="tel:+4925653333">02565 3333</a>, außerhalb der Sprechzeiten <a href="tel:116117">116117</a>, bei Lebensgefahr <a href="tel:112">112</a>. Bitte tragen Sie in dieses Formular keine Beschwerden, Diagnosen oder Befunde ein.</p></div>
-    <div class="demo-note"><p><strong>Entwurf:</strong> Dieses Formular versendet nichts. In der fertigen Website würde die Anfrage verschlüsselt an die Praxis gehen und dort in der Anmeldung erscheinen.</p></div>
+    <div class="alert-box"><p><strong>Akut krank oder Notfall?</strong> Bitte anrufen: Praxis <a href="tel:+4925653333">02565 3333</a> · Bereitschaftsdienst <a href="tel:116117">116117</a> · Notarzt <a href="tel:112">112</a>. Keine Beschwerden oder Befunde in dieses Formular.</p></div>
+    <div class="demo-note"><p><strong>Entwurf:</strong> Dieses Formular versendet nichts.</p></div>
 
     <form data-demo="danke" data-weiche novalidate>
       <fieldset>
@@ -83,7 +83,7 @@
             <label class="chip"><input type="radio" name="patient" value="bestand" checked><span>bereits Patientin oder Patient</span></label>
             <label class="chip"><input type="radio" name="patient" value="neu"><span>neu in der Praxis</span></label>
           </div>
-          <p class="hint">Neue Patientinnen und Patienten: Die Anmeldung sagt Ihnen, ob und wann eine Aufnahme möglich ist.</p>
+          <p class="hint">Neu in der Praxis? Die Anmeldung sagt Ihnen, ob eine Aufnahme möglich ist.</p>
         </div>
       </fieldset>
 
@@ -92,13 +92,13 @@
         <div class="field">
           <label class="check"><input type="checkbox" name="dauer" value="ja" checked> <span>Dauermedikation wie zuletzt verordnet</span></label>
         </div>
-        <div class="field"><label for="medikament">Einzelnes Medikament <span class="opt">(optional, nur wenn nicht die gesamte Dauermedikation gemeint ist)</span></label><input type="text" id="medikament" name="medikament" autocomplete="off"><p class="hint">Nur der Name wie auf der Packung. Keine weiteren Angaben, keine Beschwerden.</p></div>
+        <div class="field"><label for="medikament">Nur ein bestimmtes Medikament <span class="opt">(Angabe optional)</span></label><input type="text" id="medikament" name="medikament" autocomplete="off"><p class="hint">Nur der Name wie auf der Packung.</p></div>
         <div class="field"><span class="lbl">Abholung</span>
           <div class="chips">
             <label class="chip"><input type="radio" name="abholung" value="erezept" checked><span>eRezept auf der Versichertenkarte</span></label>
             <label class="chip"><input type="radio" name="abholung" value="praxis"><span>Ausdruck in der Praxis</span></label>
           </div>
-          <p class="hint">eRezepte sind nachmittags ab 16 Uhr oder am Folgetag ab 10 Uhr in Ihrer Apotheke abholbar.</p>
+          <p class="hint">eRezept: ab 16 Uhr oder am Folgetag ab 10 Uhr in Ihrer Apotheke.</p>
         </div>
       </fieldset>
 
@@ -109,7 +109,7 @@
             <option value="">Bitte wählen</option>
             <option>Augenheilkunde</option><option>Hals-Nasen-Ohren</option><option>Orthopädie</option><option>Kardiologie</option><option>Gastroenterologie</option><option>Dermatologie</option><option>Gynäkologie</option><option>Urologie</option><option>Neurologie</option><option>Radiologie</option><option>Physiotherapie</option><option>Andere Fachrichtung</option>
           </select>
-          <p class="hint">Überweisungen stellt die Praxis aus, wenn die Behandlung bereits besprochen wurde. Sonst bitte zuerst einen Termin.</p>
+          <p class="hint">Nur für bereits besprochene Behandlungen. Sonst bitte zuerst ein Termin.</p>
         </div>
       </fieldset>
 
@@ -120,7 +120,7 @@
             <option value="">Bitte wählen</option>
             <option>Grippe (Influenza)</option><option>COVID</option><option>Grippe und COVID am selben Tag</option><option>Impfpass prüfen, Auffrischungen</option><option>Reisemedizinische Beratung</option>
           </select>
-          <p class="hint">Grippe- und COVID-Impfungen dienstags und mittwochs nach Terminabsprache. Bitte Impfpass mitbringen. Reiseimpfungen möglichst 6 Wochen vor Abreise.</p>
+          <p class="hint">Grippe und COVID: dienstags und mittwochs. Impfpass mitbringen.</p>
         </div>
       </fieldset>
 
@@ -131,26 +131,27 @@
             <option value="">Bitte wählen</option>
             <option>Führerscheinuntersuchung (C-, D-Klassen)</option><option>Jugendschutzuntersuchung</option><option>Untersuchung für eine Versicherung</option><option>Schulbescheinigung</option><option>Krankentagegeldbescheinigung</option><option>Andere</option>
           </select>
-          <p class="hint">Bitte bringen Sie die Formulare des Amtes oder der Versicherung zum Termin mit.</p>
+          <p class="hint">Formulare des Amtes oder der Versicherung zum Termin mitbringen.</p>
         </div>
       </fieldset>
 
       <fieldset data-panel="frage">
         <legend>Ihre Nachricht an die Anmeldung</legend>
-        <div class="field"><label for="nachricht">Nachricht</label><textarea id="nachricht" name="nachricht" data-required></textarea><p class="hint">Organisatorisches, Unterlagen, Rückruf. Bitte keine medizinischen Angaben, keine Beschwerden, keine Befunde.</p></div>
+        <div class="field"><label for="nachricht">Nachricht</label><textarea id="nachricht" name="nachricht" data-required></textarea><p class="hint">Organisatorisches, Unterlagen, Rückruf. Keine medizinischen Angaben.</p></div>
       </fieldset>
 
       <fieldset>
         <legend>Ihre Daten</legend>
+        <p class="hint" style="margin:0 0 .8rem">Pflicht: Name und Telefon oder E-Mail. Alles andere ist optional.</p>
         <div class="two">
           <div class="field"><label for="name">Name <span class="opt">(wie auf der Versichertenkarte)</span></label><input type="text" id="name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="geb">Geburtsdatum <span class="opt">(optional, hilft der Anmeldung)</span></label><input type="date" id="geb" name="geb" autocomplete="bday"></div>
+          <div class="field"><label for="geb">Geburtsdatum <span class="opt">(Angabe optional)</span></label><input type="date" id="geb" name="geb" autocomplete="bday"></div>
         </div>
         <div class="two">
-          <div class="field"><label for="tel">Telefon</label><input type="tel" id="tel" name="tel" autocomplete="tel"></div>
-          <div class="field"><label for="mail">E-Mail</label><input type="email" id="mail" name="mail" autocomplete="email"></div>
+          <div class="field"><label for="tel">Telefon <span class="opt">(oder E-Mail)</span></label><input type="tel" id="tel" name="tel" autocomplete="tel"></div>
+          <div class="field"><label for="mail">E-Mail <span class="opt">(oder Telefon)</span></label><input type="email" id="mail" name="mail" autocomplete="email"></div>
         </div>
-        <p class="hint">Telefon oder E-Mail genügt. Die Anmeldung meldet sich auf dem Weg, den Sie angeben.</p>
+        
         <div class="field" style="margin-top:1rem"><label class="check"><input type="checkbox" name="ds" value="ja" required> <span>Ich habe den <a href="datenschutz.html">Hinweis zum Datenschutz</a> gelesen. Meine Angaben werden nur zur Bearbeitung dieser Anfrage verwendet.</span></label></div>
         <p class="error" aria-live="assertive"></p>
       </fieldset>
@@ -159,7 +160,7 @@
 
     <div class="success" id="danke" hidden>
       <h2>Vielen Dank, Ihre Anfrage ist angekommen.</h2>
-      <p>So würde es in der fertigen Website weitergehen: Die Anmeldung sieht Ihre Anfrage während der Sprechzeiten und meldet sich telefonisch oder per E-Mail. Rezepte liegen nach Freigabe als eRezept in der Apotheke bereit. In diesem Entwurf wurde nichts versendet.</p>
+      <p>In der fertigen Website meldet sich die Anmeldung bei Ihnen. Im Entwurf wurde nichts versendet.</p>
       <p><a href="index.html">Zurück zur Startseite</a></p>
     </div>
   </div>
@@ -172,7 +173,7 @@
     <div><h2>Sprechzeiten</h2><ul><li>Mo–Fr 9–12 Uhr</li><li>Mo und Di 16–18 Uhr</li><li>Do 17–19 Uhr</li><li>Termine nach telefonischer Absprache</li><li>Notfall: <a href="tel:116117">116117</a> · <a href="tel:112">112</a></li></ul></div>
     <div><h2>Seiten</h2><ul><li><a href="notfall.html">Notfall und Bereitschaftsdienst</a></li><li><a href="service.html">Termin, Rezept, Überweisung</a></li><li><a href="karriere.html">Weiterbildung und Karriere</a></li><li><a href="leichte-sprache.html">Leichte Sprache</a></li><li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
   </div>
-  <p class="entwurf-hinweis">Unverbindlicher Entwurf von Leon Oßendorf, Webdesign aus Ochtrup, kein offizieller Auftritt der Praxis Knüvener. Angaben nach den Informationen der Praxis auf knuevener.com, Stand Oktober 2026. Formulare versenden nichts.</p>
+  <p class="entwurf-hinweis">Unverbindlicher Entwurf von Leon Oßendorf, Webdesign aus Ochtrup, kein offizieller Auftritt der Praxis Knüvener. Formulare versenden nichts.</p>
 </div></footer>
 <nav class="mobile-bar" aria-label="Schnellzugriff">
   <a href="tel:+4925653333"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Anrufen</a>
