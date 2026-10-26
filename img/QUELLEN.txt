@@ -1,5 +1,10 @@
 Beispielbilder (Unsplash-Lizenz), nur fuer diesen Entwurf:
-empfang.jpg       Lisa Anna, https://unsplash.com/photos/a-kitchen-with-a-counter-chairs-and-a-bar-oLtNPzG0_uU (Ausschnitt 2:1)
-wartezimmer.jpg   smallbox, https://unsplash.com/photos/FFA8yd4OynY (Ausschnitt 3:2)
-blutdruck.jpg     Sincerely Media, https://unsplash.com/photos/Yv1Zg3jg3xk
+empfang.jpg       Lisa Anna, https://unsplash.com/photos/oLtNPzG0_uU (Ausschnitt 2:1)
+wartezimmer.jpg   Jun Ren, https://unsplash.com/photos/KnvVNQ1bAl4 (Ausschnitt 3:2)
+hausarzt.jpg      Etactics Inc, https://unsplash.com/photos/g3PsF4_y7ZY (Ausschnitt 3:2)
+vorsorge.jpg      Joachim Schnuerle, https://unsplash.com/photos/eqTmD-baDkU (Ausschnitt 3:2)
+impfung.jpg       Spencer Davis, https://unsplash.com/photos/rxTTNlar62o (Ausschnitt 3:2)
+sport.jpg         Babak Habibi, https://unsplash.com/photos/DSAfIvpJtL4 (Ausschnitt 3:2)
+geriatrie.jpg     Junior Reis, https://unsplash.com/photos/R1H2Y7T7m3I (Ausschnitt 3:2)
+beratung.jpg      Cytonn Photography, https://unsplash.com/photos/GJao3ZTX9gU (Ausschnitt 3:2)
 tastatur.jpg      Vitaly Gariev, https://unsplash.com/photos/FQQoUPVb_1c
