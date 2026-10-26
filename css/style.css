@@ -126,7 +126,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .foto img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
 .foto figcaption { font-size: .9rem; color: var(--muted); margin-top: .4rem; }
 .band { margin: 2.2rem 0 0; }
-.band img { height: auto; aspect-ratio: 2.2 / 1; object-fit: fill; }
+.band img { height: auto; aspect-ratio: 2 / 1; object-fit: fill; }
 .foto-tile { min-height: 220px; position: relative; }
 .foto-tile img { position: absolute; inset: 0; height: 100%; }
 .foto-tile figcaption { position: absolute; left: .6rem; bottom: .5rem; background: rgba(255,255,255,.88); padding: .15em .5em; border-radius: 4px; margin: 0; }
